@@ -1,4 +1,4 @@
-# Blog Card - GreatFrontend
+# Blog Card - [GreatFrontend](https://www.greatfrontend.com/)
 
 ## Project brief
 
