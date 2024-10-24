@@ -4,10 +4,12 @@ function BlogCard({ data, children }) {
       <figure>
         <img src={data.image} alt="A staged living room for inspirations" />
       </figure>
-      <p className="label">{data.label}</p>
-      <h2>{data.title}</h2>
-      <p className="description">{data.description}</p>
-      {children}
+      <div className="content">
+        <p className="label">{data.label}</p>
+        <h2>{data.title}</h2>
+        <p className="description">{data.description}</p>
+        {children}
+      </div>
     </article>
   );
 }
