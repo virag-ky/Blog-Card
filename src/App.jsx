@@ -1,26 +1,18 @@
+import BLOG_CARD_DATA from "./data";
+import arrow from "./img/arrow-right-line.svg";
 import BlogCard from "./components/BlogCard";
+import Credits from "./components/Credits";
 
 function App() {
   return (
     <div>
-      <BlogCard />
-      <div class="credits" data-gfe-screenshot-exclude="true">
-        A challenge by &nbsp;
-        <a
-          href="https://www.greatfrontend.com/projects?ref=challenges"
-          target="_blank"
-        >
-          GreatFrontEnd Projects
+      <BlogCard data={BLOG_CARD_DATA[0]}>
+        <a href="#" className="read-more">
+          Read more
+          <img src={arrow} alt="arrow icon" />
         </a>
-        . Built by &nbsp;
-        <a
-          href="https://www.greatfrontend.com/projects/u/username"
-          target="_blank"
-        >
-          Virag Kormoczy
-        </a>
-        .
-      </div>
+      </BlogCard>
+      <Credits />
     </div>
   );
 }

@@ -1,10 +1,15 @@
-function BlogCard() {
+function BlogCard({ data, children }) {
   return (
-       /* Interior
-      Top 5 Living Room Inspirations
-      Curated vibrants colors for your living, make it pop & calm in the same time.
-      Read more */
-  )
+    <article className="blog-card">
+      <figure>
+        <img src={data.image} alt="A staged living room for inspirations" />
+      </figure>
+      <p className="label">{data.label}</p>
+      <h2>{data.title}</h2>
+      <p className="description">{data.description}</p>
+      {children}
+    </article>
+  );
 }
 
 export default BlogCard;
